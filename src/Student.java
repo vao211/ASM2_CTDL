@@ -31,13 +31,15 @@ public class Student {
 
     public String getRank() {
         if (point < 5) {
-            rank = "F";
-        } else if (point >= 5 && point < 8) {
-            rank = "P";
-        } else if (point >= 8 && point < 9) {
-            rank = "M";
+            rank = "Fail";
+        } else if (point >= 5 && point < 6.5) {
+            rank = "Medium";
+        } else if (point >= 6.5 && point < 7.5) {
+            rank = "Good";
+        } else if (point >= 7.5 && point < 9) {
+            rank = "Very Good";
         } else {
-            rank = "D";
+            rank = "Excellent";
         }
         return rank;
     }
