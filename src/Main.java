@@ -213,7 +213,7 @@ public class Main {
                 nextNode = nextNode.next;
             }
 
-            if (minNode != current) {
+            if (minNode.data != current.data) {
                 Student temp = current.data;
                 current.data = minNode.data;
                 minNode.data = temp;
