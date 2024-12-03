@@ -63,6 +63,7 @@ public class Main {
                 return Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input. Please enter a valid integer.");
+                return 6;
             }
         }
     }
@@ -74,6 +75,7 @@ public class Main {
                 return value;
             } else {
                 System.out.println("Number must be > 0.");
+                return 0;
             }
         }
     }
